@@ -1,7 +1,17 @@
-.Header
+body{
+    background: lightgoldenrodyellow;
+    margin: 0;
+}
 
-header
-{
+
+header{
     height: 100px;
     background-color: blue;
+}
+.sav{
+    display:flex;
+    justify-content: center;
+    gap: 30px;
+    background: lightblue;
+    outline-color: lightblue;
 }
