@@ -6,8 +6,9 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg, #667eea, #764ba2);
+  overflow: scroll;
 }
 
 
@@ -17,6 +18,9 @@ body {
     align-items: center;
     padding: 15px 40px;
     background: lightblue;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo{
@@ -53,4 +57,21 @@ body {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap:5px;
+  }
+
+.burger span{
+
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;  
+  background-color: black;
+  transition: 0.3s;
 }
